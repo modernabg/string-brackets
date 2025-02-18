@@ -16,7 +16,7 @@ False if not.
 
 ## Resolved in both Python & Go (Golang)
 
-### Go (Golang) explanaition
+### Go (Golang) explanation
 
 The function uses a slice as a stack to keep track of opening brackets.
 
