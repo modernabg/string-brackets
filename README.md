@@ -16,6 +16,16 @@ False if not.
 
 ## Resolved in both Python & Go (Golang)
 
+### Python explenation
+
+The function uses a stack to keep track of opening brackets.
+
+It iterates through each character in the string:
+- If it's an opening bracket, it gets pushed onto the stack.
+- If it's a closing bracket, the function checks if the stack is empty or if the top of the stack matches the corresponding opening bracket.
+
+Finally, it returns True if the stack is empty (all brackets matched), otherwise False.
+
 ### Go (Golang) explanation
 
 The function uses a slice as a stack to keep track of opening brackets.
