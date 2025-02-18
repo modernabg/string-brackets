@@ -14,7 +14,7 @@ False if not.
 {}( - false
 {(}) - false
 
-## Resolved in both Python & Go (Golang)
+## Resolved in Python, Go (Golang) and PHP
 
 ### Python explenation
 
@@ -24,7 +24,7 @@ It iterates through each character in the string:
 - If it's an opening bracket, it gets pushed onto the stack.
 - If it's a closing bracket, the function checks if the stack is empty or if the top of the stack matches the corresponding opening bracket.
 
-Finally, it returns True if the stack is empty (all brackets matched), otherwise False.
+Finally, it returns `True` if the stack is empty (all brackets matched), otherwise `False`.
 
 ### Go (Golang) explanation
 
@@ -34,4 +34,14 @@ It iterates through each character in the string:
 - If it's an opening bracket, it gets added to the stack.
 - If it's a closing bracket, it checks if the stack is empty or if the top of the stack matches the corresponding opening bracket.
 
-Finally, it returns true if the stack is empty (all brackets matched), otherwise false.
+Finally, it returns `true` if the stack is empty (all brackets matched), otherwise `false`.
+
+### PHP explanation
+
+The function uses an array as a stack to track opening brackets.
+
+It iterates through each character in the string:
+- If it’s an opening bracket, it pushes it onto the stack.
+- If it’s a closing bracket, it checks if the stack is empty or if the top of the stack matches the corresponding opening bracket.
+
+Finally, it returns `true` if the stack is empty (indicating all brackets matched), otherwise `false`.
